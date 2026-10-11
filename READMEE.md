@@ -22,6 +22,39 @@ Containerization: Docker & Docker Compose for environment parity.
 
 Testing & CI/CD: Pytest and Jenkins pipeline automation.   
 
+Getting Started && Local Setup
+* Docker Desktop installed and running
+* Git
+Installation & Run
+1. Clone the Respository
+Clone the project repository from GitHub and navigate to the project root directory
+
+BASH:
+git clone https://github.com/KentAndreiOcampo/node-collaboration-lab.git
+cd node-collaboration-lab
+
+2. Configure Environment Variables
+Create a local .env configuration file by copying the provided example template
+
+BASH:
+cp .env.example .env
+
+ensure the following keys are set inside .env
+
+POSTGRES_DB=konbiniguard
+POSTGRES_USER=konbini_admin
+POSTGRES_PASSWORD=your_secure_password
+DATABASE_URL=postgresql+psycopg2://konbini_admin:your_secure_password@db:5432/konbiniguard
+
+3.Launch Container Stack
+
+BASH:
+docker compose up -d --build
+
+4.Access The Interfaces
+* Web Dashboard: https:///localhost:8080
+* FastAPI Backend Documentation: https://localhost:8000/docs
+* PostgreSQL Database Direct Access: localhost:5432
 
 ## Team Roster
 * Maintainer: Kent Ocampo
