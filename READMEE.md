@@ -1,7 +1,7 @@
 # node-collaboration-lab
 A collaborative Node.js lab for 5 team members.
 
-#KonbiniGuard / Conveni
+##KonbiniGuard / Conveni
 Real-Time Food Freshness & Shelf-Life Management System
 
 #Overview
